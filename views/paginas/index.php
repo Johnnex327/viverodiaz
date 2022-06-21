@@ -37,7 +37,7 @@
 </section>
 
 <section class="imagen-contacto">
-    <h2>Servicio cliente - Contacte con nosotros</h2>
+    <h2>Contacte con nosotros</h2>
     <p>Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad</p>
     <a href="/contacto" class="boton-amarillo">Contactános</a>
 </section>
