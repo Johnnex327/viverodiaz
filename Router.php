@@ -29,10 +29,10 @@ class Router
          } else {
             $currentUrl = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
          } */
-         $currentUrl = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
+         $currentUrl = $_SERVER["REDIRECT_URL"] === '' ? '/' : $_SERVER["REDIRECT_URL"];
          $method = $_SERVER['REQUEST_METHOD'];
 
-         debuguear($_SERVER);
+        
 
         if ($method === 'GET') {
             $fn = $this->getRoutes[$currentUrl] ?? null;
