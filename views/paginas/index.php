@@ -95,7 +95,7 @@
 
         <div class="testimonial">
             <blockquote>
-                El personal se comportó de una excelente forma, muy buena atención y los productos son de excelente calidad.
+                El personal se comportó excelente, muy buena atención y los productos son de excelente calidad.
             </blockquote>
             <p>- Marco Mendoza</p>
         </div>
