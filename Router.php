@@ -30,9 +30,14 @@ class Router
          } else {
             $currentUrl = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
          }
- */
-        $currentUrl = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
+ */     $currentUrl = '';
+        $UrlActual = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
         $method = $_SERVER['REQUEST_METHOD'];
+
+        if($UrlActual === "/propiedades/actualizar?id=7"){
+           $currentUrl = str_replace("/propiedades/actualizar?id=7", "/propiedades/actualizar", $UrlActual);
+        }
+
         debuguear($currentUrl);
         
         if ($method === 'GET') {
