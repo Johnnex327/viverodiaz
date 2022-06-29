@@ -80,6 +80,7 @@ class PropiedadController  {
 
         // Obtener los datos de la propiedad
         $propiedad = Propiedad::find($id);
+        
 
         // Consultar para obtener los vendedores
         $vendedores = Vendedor::all();
@@ -90,9 +91,10 @@ class PropiedadController  {
         
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
+               
                 // Asignar los atributos
                 $args = $_POST['propiedad'];
-
+               
                 $propiedad->sincronizar($args);
 
                 // Validación
@@ -107,8 +109,6 @@ class PropiedadController  {
                     $propiedad->setImagen($nombreImagen);
                 }
 
-
-                
                 if(empty($errores)) {
                     // Almacenar la imagen
                     if($_FILES['propiedad']['tmp_name']['imagen']) {
@@ -116,6 +116,7 @@ class PropiedadController  {
                     }
 
                     // Guarda en la base de datos
+                    
                     $resultado = $propiedad->guardar();
 
                     if($resultado) {

@@ -8,4 +8,5 @@
     <img src="build/img/6.jpg" alt="">
     <img src="build/img/7.jpg" alt="">
     <img src="build/img/8.jpg" alt="">
+    <img src="build/img/9.jpg" alt="">
 </div>
