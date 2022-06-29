@@ -94,8 +94,6 @@ class PropiedadController  {
                
                 // Asignar los atributos
                 $args = $_POST['propiedad'];
-
-                debuguear($args);
                
                 $propiedad->sincronizar($args);
 
