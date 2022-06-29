@@ -74,20 +74,6 @@ if (!isset($inicio)) {
 
     <?php echo $contenido; ?>
 
-
-    <!-- <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="/nosotros">Nosotros</a>
-                <a href="/propiedades">Anuncios</a>
-                <a href="/blog">Blog</a>
-                <a href="/contacto">Contacto</a>
-                <a href="/misionyvision">Mision y Vision</a>
-            </nav>
-        </div>
-
-        <p class="copyright">Todos los derechos Reservados <?php echo date('Y'); ?> &copy;</p>
-    </footer> -->
     <footer>
         <div class="redes-container">
             <div>
@@ -107,18 +93,6 @@ if (!isset($inicio)) {
                     </ul>
                 </nav>
             </div>
-
-            <!-- <div>
-                <h3>Enlaces</h3>
-                <div class="enlaces-footer">
-                    <a href="/nosotros">Nosotros</a>
-                    <a href="/propiedades">Anuncios</a>
-                    <a href="/galeria">Galeria</a>
-                    <a href="/blog">Blog</a>
-                    <a href="/contacto">Contacto</a>
-                </div>
-
-            </div> -->
         </div>
     </footer>
 
