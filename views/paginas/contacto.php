@@ -23,21 +23,6 @@
             <textarea id="mensaje" name="contacto[mensaje]"></textarea>
         </fieldset>
 
-        <!-- <fieldset>
-            <legend>Información sobre la propiedad</legend>
-
-            <label for="opciones">Vende o Compra:</label>
-            <select id="opciones" name="contacto[opciones]">
-                <option value="" disabled selected>-- Seleccione --</option>
-                <option value="Compra">Compra</option>
-                <option value="Vende">Vende</option>
-            </select>
-
-            <label for="presupuesto">Precio o Presupuesto</label>
-            <input type="number" placeholder="Tu Precio o Presupuesto" id="presupuesto" name="contacto[presupuesto]">
-
-        </fieldset> -->
-
         <fieldset>
             <legend>Información sobre la propiedad</legend>
 

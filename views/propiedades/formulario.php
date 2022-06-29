@@ -18,10 +18,3 @@
     <textarea id="descripcion" name="propiedad[descripcion]"><?php echo s($propiedad->descripcion); ?></textarea>
 
 </fieldset>
-
-        <?php foreach($vendedores as $vendedor) { ?>
-            <option <?php echo $propiedad->vendedorId === $vendedor->id ? 'selected' : '' ?> value="<?php echo s($vendedor->id); ?>"><?php echo s($vendedor->nombre) . " " . s($vendedor->apellido); ?>
-        <?php  } ?>
-    </select>
-
-</fieldset> -->
