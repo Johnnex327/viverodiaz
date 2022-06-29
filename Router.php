@@ -37,8 +37,6 @@ class Router
         if($UrlActual === "/propiedades/actualizar?id=7"){
            $currentUrl = str_replace("/propiedades/actualizar?id=7", "/propiedades/actualizar", $UrlActual);
         }
-
-        debuguear($currentUrl);
         
         if ($method === 'GET') {
             $fn = $this->getRoutes[$currentUrl] ?? null;
