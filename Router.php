@@ -24,22 +24,15 @@ class Router
         //Arreglo de rutas protegidas
         $rutas_protegidas = ['/admin'];
 
-        /* $currentUrl = $_SERVER['PATH_INFO'] ?? '/';  */ //no sirve
+        $currentUrl = $_SERVER['PATH_INFO'] ?? '/'; 
         /* if ($_SERVER['PATH_INFO']) {
             $currentUrl = $_SERVER['PATH_INFO'] ?? '/';
          } else {
             $currentUrl = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
-         }
- */     $currentUrl = '';
-        $UrlActual = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
+         } */
+         $currentUrl = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'];
         $method = $_SERVER['REQUEST_METHOD'];
-        
-        $caracteresUrl = strlen($UrlActual);
-        if($caracteresUrl >= 28){
-            $currentUrl = "/propiedades/actualizar";
-        }
-        
-        
+
         if ($method === 'GET') {
             $fn = $this->getRoutes[$currentUrl] ?? null;
         } else {
