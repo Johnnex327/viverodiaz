@@ -38,8 +38,6 @@ class Router
         if($caracteresUrl >= 28){
             $currentUrl = "/propiedades/actualizar";
         }
-
-        debuguear($currentUrl);
         
         
         if ($method === 'GET') {
