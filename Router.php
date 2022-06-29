@@ -25,9 +25,10 @@ class Router
         $rutas_protegidas = ['/admin'];
 
         /* $currentUrl = $_SERVER['PATH_INFO'] ?? '/';  */ //no sirve
-        debuguear($_SERVER);
+        /* debuguear($_SERVER); */
         $currentUrl = $_SERVER['REQUEST_URI'];
         $method = $_SERVER['REQUEST_METHOD'];
+        debuguear($currentUrl);
 
         if ($method === 'GET') {
             $fn = $this->getRoutes[$currentUrl] ?? null;
