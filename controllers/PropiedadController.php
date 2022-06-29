@@ -78,6 +78,8 @@ class PropiedadController  {
 
         $id = validarORedireccionar('/propiedades');
 
+       
+
         // Obtener los datos de la propiedad
         $propiedad = Propiedad::find($id);
         
