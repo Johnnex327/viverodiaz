@@ -1,4 +1,5 @@
-b200332d6cbad3
-037befc0
-us-cdbr-east-05.cleardb.net
-heroku_9fe081c1d922d8d
+mysql://
+b778bfdeee4a84
+99db37bd
+us-cdbr-east-06.cleardb.net
+heroku_5bb80f43072bf27
