@@ -11,14 +11,12 @@ class PropiedadController  {
     
     public static function index(Router $router) {
         $propiedades = Propiedad::all();
-        $vendedores = Vendedor::all();
 
         // Muestra mensaje condicional
         $resultado = $_GET['resultado'] ?? null;
 
         $router->render('propiedades/index', [
             'propiedades' => $propiedades,
-            'vendedores' => $vendedores,
             'resultado' => $resultado
         ]);
     }
@@ -27,7 +25,6 @@ class PropiedadController  {
 
         $errores = Propiedad::getAlertas();
         $propiedad = new Propiedad;
-        $vendedores = Vendedor::all();
 
         // Ejecutar el código después de que el usuario envia el formulario
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -70,7 +67,6 @@ class PropiedadController  {
         $router->render('propiedades/crear', [
             'errores' => $errores,
             'propiedad' => $propiedad,
-            'vendedores' => $vendedores
         ]);
     }
 
@@ -84,7 +80,6 @@ class PropiedadController  {
         
 
         // Consultar para obtener los vendedores
-        $vendedores = Vendedor::all();
 
         // Arreglo con mensajes de errores
         $errores = Propiedad::getAlertas();
@@ -127,7 +122,6 @@ class PropiedadController  {
 
         $router->render('propiedades/actualizar', [
             'propiedad' => $propiedad,
-            'vendedores' => $vendedores,
             'errores' => $errores
         ]);
     }
