@@ -1,9 +1,7 @@
 <main class="contenedor seccion">
     <h1>Contacto</h1>
 
-    <?php if($mensaje) { ?>
-        <p class="alerta exito"><?php echo $mensaje; ?></p>
-    <?php } ?>
+    
     <picture>
         <source srcset="build/img/destacada5.webp" type="image/webp">
         <source srcset="build/img/destacada5.jpg" type="image/jpeg">
@@ -11,16 +9,18 @@
     </picture>
 
     <h2>Llene el formulario de Contacto</h2>
-
+    <?php if($mensaje) { ?>
+        <p class="alerta exito"><?php echo $mensaje; ?></p>
+    <?php } ?>
     <form class="formulario" method="POST" action="/contacto">
         <fieldset>
             <legend>Información Personal</legend>
 
-            <label for="nombre">Nombre</label>
-            <input type="text" placeholder="Tu Nombre" id="nombre" name="contacto[nombre]">
+            <label for="asunto">Asunto</label>
+            <input type="text" placeholder="" id="nombre" name="asunto">
 
             <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="contacto[mensaje]"></textarea>
+            <textarea id="mensaje" name="mensaje"></textarea>
         </fieldset>
 
         <fieldset>
@@ -30,8 +30,8 @@
                 <!-- <label for="contactar-telefono">Teléfono</label>
                 <input name="contacto[contacto]" type="radio" value="telefono" id="contactar-telefono" > -->
 
-                <label for="contactar-email">E-mail</label>
-                <input name="contacto" placeholder="Tu email" type="text" id="contactar-email" >
+                <label for="email">E-mail</label>
+                <input name="correo" placeholder="Tu email" type="text" id="contactar-email" >
             </div>
 
             <div id="contacto"></div>

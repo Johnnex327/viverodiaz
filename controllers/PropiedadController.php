@@ -25,7 +25,7 @@ class PropiedadController  {
 
     public static function crear(Router $router) {
 
-        $errores = Propiedad::getErrores();
+        $errores = Propiedad::getAlertas();
         $propiedad = new Propiedad;
         $vendedores = Vendedor::all();
 
@@ -87,7 +87,7 @@ class PropiedadController  {
         $vendedores = Vendedor::all();
 
         // Arreglo con mensajes de errores
-        $errores = Propiedad::getErrores();
+        $errores = Propiedad::getAlertas();
 
         
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -97,7 +97,6 @@ class PropiedadController  {
                 $args = $_POST['propiedad'];
                
                 $propiedad->sincronizar($args);
-
                 // Validación
                 $errores = $propiedad->validar();
 
@@ -109,7 +108,6 @@ class PropiedadController  {
                     $image = Image::make($_FILES['propiedad']['tmp_name']['imagen'])->fit(800,600);
                     $propiedad->setImagen($nombreImagen);
                 }
-
                 if(empty($errores)) {
                     // Almacenar la imagen
                     if($_FILES['propiedad']['tmp_name']['imagen']) {

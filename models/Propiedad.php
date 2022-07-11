@@ -27,29 +27,29 @@ class Propiedad extends ActiveRecord {
     }
 
     public function validar() {
-
+        
         if(!$this->titulo) {
-            self::$errores[] = "Debes añadir un titulo";
+            self::$alertas[] = "Debes añadir un titulo";
         }
 
         if(!$this->precio) {
-            self::$errores[] = 'El Precio es Obligatorio';
+            self::$alertas[] = 'El Precio es Obligatorio';
         }
-
-        if( strlen( $this->descripcion ) < 50 ) {
-            self::$errores[] = 'La descripción es obligatoria y debe tener al menos 50 caracteres';
+        $numeroPalabras = str_word_count($this->descripcion); 
+        
+        if($numeroPalabras >= 75 ) {
+            
+            self::$alertas[] = 'La descripción es obligatoria y debe tener solo 75 palabras';
         }
-
-
         if(!$this->id )  {
             $this->validarImagen();
         }
-        return self::$errores;
+        return self::$alertas;
     }
 
     public function validarImagen() {
         if(!$this->imagen ) {
-            self::$errores[] = 'La Imagen es Obligatoria';
+            self::$alertas[] = 'La Imagen es Obligatoria';
         }
     }
 

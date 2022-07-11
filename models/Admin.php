@@ -22,12 +22,12 @@ class Admin extends ActiveRecord {
 
     public function validar() {
         if(!$this->email) {
-            self::$errores[] = "El Email del usuario es obligatorio";
+            self::$alertas[] = "El Email del usuario es obligatorio";
         }
         if(!$this->password) {
-            self::$errores[] = "El Password del usuario es obligatorio";
+            self::$alertas[] = "El Password del usuario es obligatorio";
         }
-        return self::$errores;
+        return self::$alertas;
     }
 
     public function existeUsuario() {
@@ -36,7 +36,7 @@ class Admin extends ActiveRecord {
         $resultado = self::$db->query($query);
 
         if(!$resultado->num_rows) {
-            self::$errores[] = 'El Usuario No Existe';
+            self::$alertas[] = 'El Usuario No Existe';
             return;
         }
 
@@ -55,7 +55,7 @@ class Admin extends ActiveRecord {
         $this->autenticado = $this->valor;
 
         if(!$this->autenticado) {
-            self::$errores[] = 'El Password es Incorrecto';
+            self::$alertas[] = 'El Password es Incorrecto';
             return;
         }
     }

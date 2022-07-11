@@ -79,17 +79,17 @@ if (!isset($inicio)) {
         <div class="redes-container">
             <div>
                 <h3>Información</h3>
-                <p>Tlfn: 072-421-348</p>
-                <p>Correo: viverodiaz86@gmail.com</p>
+                <p>Tlfn: 0989454418</p>
+                <p>Correo: cdiazpino86@hotmail.com</p>
                 <p>Dirección: Zhucay</p>
             </div>
             <div>
                 <h3>Redes Sociales</h3>
                 <nav>
                     <ul>
-                        <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.facebook.com/Vivero-D%C3%ADaz-105756052195094" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://wa.me/message/7K5R7N727QJLB1" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
 
                     </ul>
                 </nav>
