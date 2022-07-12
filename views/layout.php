@@ -68,7 +68,7 @@ if (!isset($inicio)) {
             </div>
             <!--.barra-->
 
-            <?php echo $inicio ? "<h1>Venta de Plantas de cacao al por mayor y menor</h1>" : ''; ?>
+            <?php echo $inicio ? "<h1>PLANTAS DE CACAO VIVERO DÍAZ EN ZHUCAY</h1>" : ''; ?>
         </div>
     </header>
 
