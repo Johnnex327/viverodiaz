@@ -29,7 +29,7 @@ class PropiedadController  {
         // Ejecutar el código después de que el usuario envia el formulario
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-            /** Crea una nueva instancia */
+            /* Crea una nueva instancia */
             $propiedad = new Propiedad($_POST['propiedad']);
             $peso = $_FILES['propiedad']['size']['imagen'];
             
