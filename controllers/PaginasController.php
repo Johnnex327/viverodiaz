@@ -87,13 +87,13 @@ class PaginasController {
                 $subject = $_POST["asunto"];
                 $bodyEmail = $_POST["mensaje"];
 
-                $fromemail = "jhon.naib327@gmail.com";
+                $fromemail = "viverodiaz22@gmail.com";
                 $fromname = "noreply@contacto.com";
                 $host = "smtp.gmail.com";
                 $port = 587;
                 $SMTPAuth = true;
                 $SMTPSecure = "tls";
-                $password = "gtaaztqclywamxrx";
+                $password = "vivero20222022";
 
                 $mail = new PHPMailer(true);
 
