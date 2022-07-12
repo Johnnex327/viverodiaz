@@ -32,7 +32,7 @@ class PropiedadController  {
             /* Crea una nueva instancia */
             $propiedad = new Propiedad($_POST['propiedad']);
             $peso = $_FILES['propiedad']['size']['imagen'];
-            debuguear($_FILES);
+            debuguear($_FILES['propiedad']['size']['imagen']);
             // Generar un nombre único
             $nombreImagen = md5( uniqid( rand(), true ) ) . ".jpg";
 
