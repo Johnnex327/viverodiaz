@@ -34,7 +34,7 @@ class PropiedadController  {
 
             // Generar un nombre único
             $nombreImagen = md5( uniqid( rand(), true ) ) . ".jpg";
-
+            
 
             // Setear la imagen
             // Realiza un resize a la imagen con intervention

@@ -44,6 +44,11 @@ class Propiedad extends ActiveRecord {
         if(!$this->id )  {
             $this->validarImagen();
         }
+
+        /* $medida = 1000 * 1000;
+        if($this->imagen['size'] > $medida){
+            self::$alertas = 'La imagen pesa mas de 1Mb';
+        } */
         return self::$alertas;
     }
 

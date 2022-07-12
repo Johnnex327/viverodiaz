@@ -14,18 +14,14 @@
     <?php } ?>
     <form class="formulario" method="POST" action="/contacto">
         <fieldset>
-            <legend>Información Personal</legend>
+            <legend>Información</legend>
 
             <label for="asunto">Asunto</label>
             <input type="text" placeholder="" id="nombre" name="asunto">
 
             <label for="mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje"></textarea>
-        </fieldset>
-
-        <fieldset>
-            <legend>Información sobre la propiedad</legend>
-
+    
             <div class="forma-contacto">
                 <!-- <label for="contactar-telefono">Teléfono</label>
                 <input name="contacto[contacto]" type="radio" value="telefono" id="contactar-telefono" > -->

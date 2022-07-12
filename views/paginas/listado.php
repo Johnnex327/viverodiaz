@@ -11,7 +11,7 @@
 
         
             <a href="propiedad?id=<?php echo $propiedad->id; ?>" class="boton-amarillo-block">
-                Ver Propiedad
+                Ver Producto
             </a>
         </div><!--.contenido-anuncio-->
     </div><!--anuncio-->
