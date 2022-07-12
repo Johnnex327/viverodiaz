@@ -31,20 +31,22 @@ class PropiedadController  {
 
             /** Crea una nueva instancia */
             $propiedad = new Propiedad($_POST['propiedad']);
+            $peso = $_FILES['propiedad']['size']['imagen'];
+            
 
             // Generar un nombre único
             $nombreImagen = md5( uniqid( rand(), true ) ) . ".jpg";
-            
 
             // Setear la imagen
             // Realiza un resize a la imagen con intervention
             if($_FILES['propiedad']['tmp_name']['imagen']) {
                 $image = Image::make($_FILES['propiedad']['tmp_name']['imagen'])->fit(800,600);
+
                 $propiedad->setImagen($nombreImagen);
             }
 
             // Validar
-            $errores = $propiedad->validar();
+            $errores = $propiedad->validar($peso);
             if(empty($errores)) {
 
                 // Crear la carpeta para subir imagenes
@@ -90,10 +92,10 @@ class PropiedadController  {
                
                 // Asignar los atributos
                 $args = $_POST['propiedad'];
-               
+                $peso = $_FILES['propiedad']['size']['imagen'];
                 $propiedad->sincronizar($args);
                 // Validación
-                $errores = $propiedad->validar();
+                $errores = $propiedad->validar($peso);
 
                 // Subida de archivos
                 // Generar un nombre único

@@ -26,7 +26,7 @@ class Propiedad extends ActiveRecord {
 
     }
 
-    public function validar() {
+    public function validar($peso = 0) {
         
         if(!$this->titulo) {
             self::$alertas[] = "Debes añadir un titulo";
@@ -45,10 +45,11 @@ class Propiedad extends ActiveRecord {
             $this->validarImagen();
         }
 
-        /* $medida = 1000 * 1000;
-        if($this->imagen['size'] > $medida){
-            self::$alertas = 'La imagen pesa mas de 1Mb';
-        } */
+        
+        $medida = 1000 * 1000;
+        if($peso > $medida){
+            self::$alertas[] = 'La imagen pesa mas de 1Mb';
+        } 
         return self::$alertas;
     }
 
