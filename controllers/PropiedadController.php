@@ -32,7 +32,9 @@ class PropiedadController  {
             /* Crea una nueva instancia */
             $propiedad = new Propiedad($_POST['propiedad']);
             $peso = $_FILES['propiedad']['size']['imagen'];
-            debuguear($_FILES);
+
+            /* debuguear($_FILES); */
+            
             // Generar un nombre único
             $nombreImagen = md5( uniqid( rand(), true ) ) . ".jpg";
 
@@ -74,25 +76,18 @@ class PropiedadController  {
     public static function actualizar(Router $router) {
 
         $id = validarORedireccionar('/propiedades');
-
-    
         // Obtener los datos de la propiedad
         $propiedad = Propiedad::find($id);
-        
-
-        // Consultar para obtener los vendedores
 
         // Arreglo con mensajes de errores
         $errores = Propiedad::getAlertas();
 
-        
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-                
                 // Asignar los atributos
                 $args = $_POST['propiedad'];
                 $peso = $_FILES['propiedad']['size']['imagen'];
-                debuguear($_FILES);
+                /* debuguear($_FILES); */
 
                 $propiedad->sincronizar($args);
                 // Validación
