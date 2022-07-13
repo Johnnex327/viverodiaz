@@ -47,8 +47,8 @@ class Propiedad extends ActiveRecord {
 
         
         $medida = 1000 * 1000;
-        if($peso > 3000000){
-            self::$alertas[] = 'La imagen pesa mas de 1Mb';
+        if($peso > 12000000){
+            self::$alertas[] = 'La imagen pesa mas de 10Mb';
         } 
         return self::$alertas;
     }
