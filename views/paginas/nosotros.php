@@ -30,7 +30,7 @@
         <div class="icono">
             <img src="build/img/icono1.svg" alt="Icono seguridad" loading="lazy">
             <h3>Seguridad</h3>
-            <p>Contamos con años de expriencias orientado a la venta de plantulas de cacao, nuestros clientes son nuestro respaldo.</p>
+            <p>Contamos con años de expriencias orientado a la venta de plantas de cacao, nuestros clientes son nuestro respaldo.</p>
         </div>
         <div class="icono">
             <img src="build/img/icono2.svg" alt="Icono Precio" loading="lazy">

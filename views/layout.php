@@ -80,7 +80,7 @@ if (!isset($inicio)) {
             <div>
                 <h3>Información</h3>
                 <p>Tlfn: 0989454418</p>
-                <p>Correo: cdiazpino86@hotmail.com</p>
+                <p>Correo: viverodiaz22@gmail.com</p>
                 <p>Dirección: Zhucay</p>
             </div>
             <div>
