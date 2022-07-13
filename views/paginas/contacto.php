@@ -12,6 +12,12 @@
     <?php if($mensaje) { ?>
         <p class="alerta exito"><?php echo $mensaje; ?></p>
     <?php } ?>
+
+    <?php foreach($errores as $error): ?>
+    <div class="alerta error">
+        <?php echo $error; ?>
+    </div>
+    <?php endforeach; ?>
     <form class="formulario" method="POST" action="/contacto">
         <fieldset>
             <legend>Información</legend>

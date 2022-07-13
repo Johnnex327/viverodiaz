@@ -15,6 +15,7 @@ class LoginController {
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
             $auth = new Admin($_POST);
             $errores = $auth->validar();
+
         
             if(empty($errores)) {
 
@@ -70,8 +71,8 @@ class LoginController {
                     $mail->Host = 'smtp.gmail.com';
                     $mail->SMTPAuth = true;
                     $mail->Port = 587;
-                    $mail->Username = 'jhon.naib327@gmail.com';
-                    $mail->Password = 'gtaaztqclywamxrx';
+                    $mail->Username = 'viverodiaz22@gmail.com';
+                    $mail->Password = 'mydhvgowneclhezu';
                 
                     $mail->setFrom($usuario->email);
                     $mail->addAddress($usuario->email, 'Vivero Diaz');

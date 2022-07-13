@@ -88,10 +88,12 @@ class PropiedadController  {
         
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-               
+                
                 // Asignar los atributos
                 $args = $_POST['propiedad'];
                 $peso = $_FILES['propiedad']['size']['imagen'];
+                debuguear($_FILES);
+
                 $propiedad->sincronizar($args);
                 // Validación
                 $errores = $propiedad->validar($peso);

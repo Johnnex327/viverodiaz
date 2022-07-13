@@ -88,8 +88,8 @@ if (!isset($inicio)) {
                 <nav>
                     <ul>
                         <li><a href="https://www.facebook.com/Vivero-D%C3%ADaz-105756052195094" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://wa.me/message/7K5R7N727QJLB1" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://www.instagram.com/cdiazpino86/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://wa.me/message/LLQU2B3KYPMPJ1" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
 
                     </ul>
                 </nav>
