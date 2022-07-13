@@ -1,6 +1,10 @@
 <main class="contenedor seccion">
     <h1>Contacto</h1>
 
+    <?php
+phpinfo();
+?>
+
     
     <picture>
         <source srcset="build/img/destacada5.webp" type="image/webp">
