@@ -34,7 +34,7 @@ class PropiedadController  {
             $peso = $_FILES['propiedad']['size']['imagen'];
 
             /* debuguear($_FILES); */
-            
+
             // Generar un nombre único
             $nombreImagen = md5( uniqid( rand(), true ) ) . ".jpg";
 
@@ -87,7 +87,7 @@ class PropiedadController  {
                 // Asignar los atributos
                 $args = $_POST['propiedad'];
                 $peso = $_FILES['propiedad']['size']['imagen'];
-                /* debuguear($_FILES); */
+                debuguear($_FILES);
 
                 $propiedad->sincronizar($args);
                 // Validación
