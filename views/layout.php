@@ -50,6 +50,12 @@ if (!isset($inicio)) {
                             <li>
                             <li><a href="/misionyvision">Mision</a>
                             <li>
+                            <?php
+                                if($auth) :?>
+                                <li><a href="/admin">Admin</a></li>
+                                <?php
+                                endif;
+                                ?>
                             <li>
                                 <?php if ($auth) : ?>
                                     <a href="/logout">Cerrar Sesión</a>
