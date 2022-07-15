@@ -60,7 +60,7 @@ if (!isset($inicio)) {
                                 <?php if ($auth) : ?>
                                     <a href="/logout">Cerrar Sesión</a>
                                 <?php else : ?>
-                                    <a class="tipoLogin" href="/login">Login</a>
+                                    <a class="tipoLogin" href="">Login</a>
                                     <ul class="menu-vertical">
                                         <li><a href="/login">Admin web</a></li>
                                         <li><a href="http://gestioncacao.codicephp.com/?fbclid=IwAR25epgVBRQNu8gYIiyFeMgQmdo5G7nwXlQgR4KKIJ_o33j6loK1kHxiNCI">Sistema de Gestion</a></li>
