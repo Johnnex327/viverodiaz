@@ -8,6 +8,6 @@
     <p class="precio">Precio Und:  $<?php echo $propiedad->precio; ?></p>
 
         <?php echo $propiedad->descripcion; ?>
-        <a href="https://api.whatsapp.com/message/7K5R7N727QJLB1?autoload=1&app_absent=0" class="boton-amarillo-block">Solicitar Pedido</a>
+        <a href="https://api.whatsapp.com/message/LLQU2B3KYPMPJ1?autoload=1&app_absent=0" class="boton-amarillo-block">Solicitar Pedido</a>
     </div>
 </main>
