@@ -9,12 +9,12 @@
 
     <form method="POST" class="formulario" novalidate>
         <fieldset>
-            <legend>Email y Password</legend>
+            <legend>Autenticación</legend>
 
-            <label for="email">E-mail</label>
+            <label for="email">Correo</label>
             <input type="email" name="email" placeholder="Tu Email" id="email">
 
-            <label for="password">Password</label>
+            <label for="password">Contraseña</label>
             <input type="password" name="password" placeholder="Tu Password" id="password">
         </fieldset>
 
