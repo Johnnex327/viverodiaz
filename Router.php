@@ -24,8 +24,8 @@ class Router
         //Arreglo de rutas protegidas
         $rutas_protegidas = ['/admin'];
 
-         $currentUrl = $_SERVER['PATH_INFO'] ?? '/';
-         /* $currentUrl = $_SERVER["REDIRECT_URL"] === '' ? '/' : $_SERVER["REDIRECT_URL"]; */
+        /*  $currentUrl = $_SERVER['PATH_INFO'] ?? '/'; */
+         $currentUrl = $_SERVER["REDIRECT_URL"] === '' ? '/' : $_SERVER["REDIRECT_URL"];
          $method = $_SERVER['REQUEST_METHOD'];
 
         
