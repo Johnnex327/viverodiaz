@@ -8,9 +8,7 @@
                 <source srcset="build/img/nosotros.jpg" type="image/jpeg">
                 <img loading="lazy" src="build/img/nosotros.jpg" alt="Sobre Nosotros">
             </picture>
-            <p class="textos">
-                Hoy en día tenemos la oportunidad de seguir avanzando gracias a la Universidad Agraria del Ecuador, que ha permitido realizar un proyecto de investigación de tesis para implementar un sistema web para la gestión administrativa de producción de plantas de cacao en nuestra empresa, de esa manera poder dar el seguimiento adecuado para tener un producto de calidad y competir en el mercado, generando más cliente y mejores ingresos.
-            </p>
+            
         </div>
 
         <div class="texto-nosotros">
@@ -25,7 +23,9 @@
                 Quizá para muchos 2 terrenos es poco, pero en realidad el esfuerzo durante todos estos años ha hecho que valoremos todo lo que emos logrado.
             </p>
             
-
+            <p class="textos">
+                Hoy en día tenemos la oportunidad de seguir avanzando gracias a la Universidad Agraria del Ecuador, que ha permitido realizar un proyecto de investigación de tesis para implementar un sistema web para la gestión administrativa de producción de plantas de cacao en nuestra empresa, de esa manera poder dar el seguimiento adecuado para tener un producto de calidad y competir en el mercado, generando más cliente y mejores ingresos.
+            </p>
         </div>
     </div>
 </main>

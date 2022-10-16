@@ -1,7 +1,7 @@
-<h1 class="h1-galeria"><span>UBICACIÓN DE LA EMPRESA “VIVERO DIAZ”</span></h1>
+<h1 class="h1-galeria"><span>Ubicación de la empresa “Vivero Díaz”</span></h1>
 
 <div class="contenedor img-gallery">
-    <img src="build/img/mapa.jpg" alt="">
+    <img  class="imagen1" src="build/img/mapa.jpg" alt="">
     <img src="build/img/mapa2.jpg" alt="">
     <img src="build/img/mapa3.jpg" alt="">
     <img src="build/img/mapa4.jpg" alt="">
