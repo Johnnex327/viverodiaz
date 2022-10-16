@@ -71,8 +71,8 @@ class LoginController {
                     $mail->Host = 'smtp.gmail.com';
                     $mail->SMTPAuth = true;
                     $mail->Port = 587;
-                    $mail->Username = 'viverodiaz22@gmail.com';
-                    $mail->Password = 'mydhvgowneclhezu';
+                    $mail->Username = 'viverodiaz2022@gmail.com';
+                    $mail->Password = 'qhkxocvqcpzhgigy';
                 
                     $mail->setFrom($usuario->email);
                     $mail->addAddress($usuario->email, 'Vivero Diaz');
