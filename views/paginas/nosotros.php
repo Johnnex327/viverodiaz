@@ -13,7 +13,7 @@
 
         <div class="texto-nosotros">
             <blockquote class="titulo">
-                15 Años de experiencia
+                15 Años de Experiencia
             </blockquote>
 
             <p class="textos">Vivero Díaz se fundo en el año 2007 como una microempresa dedicada a la producción de plantas de cacao para la distribución del producto al público en general.
