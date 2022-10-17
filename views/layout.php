@@ -63,7 +63,7 @@ if (!isset($inicio)) {
                                     <a class="tipoLogin">Login</a>
                                     <ul class="menu-vertical">
                                         <li><a href="/login">Admin web</a></li>
-                                        <li><a href="http://viverodiaz.com">Sistema de Gestion</a></li>
+                                        <li><a href="http://viverodia.com">Sistema de Gestion</a></li>
                                     </ul>
                             </li>
                         <?php endif; ?>
