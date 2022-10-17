@@ -108,7 +108,7 @@ class PaginasController
                     $port = 587;
                     $SMTPAuth = true;
                     $SMTPSecure = "tls";
-                    $password = "mydhvgowneclhezu";
+                    $password = "ivryfyweopljmsvo";
 
                     $mail = new PHPMailer(true);
 
